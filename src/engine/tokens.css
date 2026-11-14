@@ -1,0 +1,50 @@
+/* DESIGN TOKENS — "One night, her moon". Names are the contract the engine CSS uses. */
+
+:root {
+  /* Color: name by role. Gothic romantic: one ground, one ink, one ruby. */
+  --c-bg: #0b0709;          /* night ink */
+  --c-fg: #f3ecef;          /* moonlight */
+  --c-muted: #a99ba3;       /* dusk mauve (AA on ground) */
+  --c-line: rgb(243 236 239 / 0.16);
+  --c-accent: #d01a2e;      /* ruby — her red. Fills and large type only */
+  --c-accent-ink: #f3ecef;  /* text on ruby fills */
+  --c-curtain: #160509;     /* the eclipse */
+
+  /* Her pigments: content color on /world, tiny motifs elsewhere */
+  --c-amethyst: #8b5fbf;
+  --c-lavender: #b9a3e3;
+  --c-sage: #9caf88;
+  --c-pink: #ff4fa3;
+  --c-blue: #2b3a8f;
+  --c-wheat: #e4c98f;
+
+  /* Type families (next/font variables) */
+  --f-display: var(--font-display), 'Didot', 'Times New Roman', serif;
+  --f-body: var(--font-body), system-ui, sans-serif;
+  --f-hand: var(--font-hand), 'Segoe Script', cursive;
+
+  /* Fluid type scale (min @ 375px → max @ 1440px) */
+  --t-mega: clamp(4rem, 1.2rem + 14vw, 16rem);
+  --t-xl: clamp(2.5rem, 1.4rem + 4.8vw, 6rem);
+  --t-l: clamp(1.75rem, 1.3rem + 1.9vw, 3rem);
+  --t-m: clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem);
+  --t-body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  --t-s: 0.875rem;
+  --t-xs: 0.75rem;
+
+  /* Space: one fluid unit. Section rhythm varies per section (see site styles). */
+  --u: clamp(0.5rem, 0.35rem + 0.6vw, 1rem);
+  --gutter: clamp(1rem, 0.6rem + 1.6vw, 2.5rem);
+  --cols: 12;
+
+  /* Shape: engraved and sharp; circles belong to the moon and the seals only. */
+  --radius: 0px;
+
+  /* Layers */
+  --z-gl: 0;
+  --z-content: 1;
+  --z-header: 50;
+  --z-cursor: 80;
+  --z-curtain: 90;
+  --z-loader: 100;
+}
